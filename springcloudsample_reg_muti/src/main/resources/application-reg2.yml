@@ -1,0 +1,11 @@
+server:
+  port: 2222
+
+spring:
+  profiles: reg2
+eureka:
+  instance:
+    hostname: reg2
+  client:
+    serviceUrl:
+      defaultZone: http://reg1:1111/eureka/
